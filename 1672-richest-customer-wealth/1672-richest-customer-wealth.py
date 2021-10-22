@@ -9,3 +9,4 @@ class Solution(object):
             if sum(accounts[i]) > highest:
                 highest = sum(accounts[i])
         return highest
+    
