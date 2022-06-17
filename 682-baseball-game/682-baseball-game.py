@@ -12,8 +12,6 @@ class Solution(object):
                 report.append(report[len(report) - 1] * 2)
             if ops[i] == "C":
                 report.pop(len(report) - 1)
-            if ops[i].isnumeric():
-                report.append(int(ops[i]))
-            if ops[i][0] == "-":
+            if ops[i].isnumeric() or ops[i][0] == "-":
                 report.append(int(ops[i]))
         return sum(report)
