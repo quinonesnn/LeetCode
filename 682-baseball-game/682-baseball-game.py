@@ -15,6 +15,5 @@ class Solution(object):
             if ops[i].isnumeric():
                 report.append(int(ops[i]))
             if ops[i][0] == "-":
-                print("negative")
                 report.append(int(ops[i]))
         return sum(report)
