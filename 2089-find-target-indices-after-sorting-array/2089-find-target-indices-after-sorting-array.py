@@ -7,11 +7,7 @@ class Solution(object):
         """
         output = []
         nums.sort()
-        occurs = nums.count(target)
-        start = 0
-        for i in range(occurs):
-            idx = nums.index(target, start)
-            output.append(idx)
-            if idx != len(nums):
-                start = idx + 1 
+        for i in range (len(nums)):
+            if nums[i] == target:
+                output.append(i)
         return output
