@@ -4,7 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        for num in nums:
+        
+        for num in set(nums):
             if nums.count(num) % 2 != 0:
                 return False
         return True
