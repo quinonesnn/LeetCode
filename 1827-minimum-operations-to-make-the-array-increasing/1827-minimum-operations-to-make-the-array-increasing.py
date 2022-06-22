@@ -11,9 +11,4 @@ class Solution(object):
                 nums[i + 1] += increment
                 count += increment
         return count
-    
-    
-        """while nums[i] >= nums[i + 1]:
-        nums[i + 1] += 1
-        count += 1"""
         
