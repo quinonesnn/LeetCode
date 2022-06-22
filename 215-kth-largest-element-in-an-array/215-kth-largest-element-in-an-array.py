@@ -5,9 +5,5 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        largest = 0
-        for i in range(k):
-            largest = max(nums)
-            nums.remove(largest)
-        return largest
-            
+        nums.sort()
+        return nums[::-1][k-1]
