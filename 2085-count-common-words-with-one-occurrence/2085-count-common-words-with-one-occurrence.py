@@ -13,7 +13,7 @@ class Solution(object):
         # return output
         
         output = 0
-        for word in words1:
+        for word in set(words1):
             if(Counter(words1)[word] == Counter(words2)[word]) and Counter(words2)[word] == 1:
                 output += 1
         return output
