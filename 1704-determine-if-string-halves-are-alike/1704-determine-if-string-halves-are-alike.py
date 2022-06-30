@@ -16,6 +16,4 @@ class Solution(object):
             lastCount += last.count(vowel.upper())
         if firstCount == lastCount:
             return True
-        print(firstCount)
-        print(lastCount)
         return False
