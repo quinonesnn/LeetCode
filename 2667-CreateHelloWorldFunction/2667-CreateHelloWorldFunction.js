@@ -1,14 +1,17 @@
 /**
- * @return {Function}
+ * @param {number} n
+ * @return {Function} counter
  */
-var createHelloWorld = function() {
+var createCounter = function(n) {
     
-    return function(...args) {
-        return "Hello World"
-    }
+    return function() {
+        return n++;
+    };
 };
 
-/**
- * const f = createHelloWorld();
- * f(); // "Hello World"
+/** 
+ * const counter = createCounter(10)
+ * counter() // 10
+ * counter() // 11
+ * counter() // 12
  */
